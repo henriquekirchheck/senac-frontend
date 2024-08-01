@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import { glob } from "glob";
+import react from "@vitejs/plugin-react";
 
 const input = (await glob("src/**/*.html"))
 	.map((path) => {
@@ -14,6 +15,7 @@ const input = (await glob("src/**/*.html"))
 	);
 
 export default defineConfig({
+	plugins: [react()],
 	server: {
 		open: "/index.html",
 	},
