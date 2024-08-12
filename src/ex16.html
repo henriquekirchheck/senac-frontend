@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 16</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .layout {
+        width: 100dvw;
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        background-color: beige;
+      }
+      header,
+      footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 6rem;
+      }
+
+      main {
+        flex-grow: 1;
+        padding: 2rem 1rem;
+      }
+
+      footer {
+        background-color: darkslategrey;
+        color: white;
+      }
+
+      footer a {
+        color: white;
+      }
+
+      header ul,
+      footer ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+      }
+
+      .tierlist {
+        border-collapse: collapse;
+        background-color: black;
+        color: white;
+      }
+
+      .tierlist > tbody > tr {
+        border: 2px solid gray;
+      }
+      .tierlist > tbody > tr > th {
+        border: 2px solid gray;
+      }
+
+      .tierlist > tbody > tr:nth-child(1) > th {
+        background-color: red;
+      }
+      .tierlist > tbody > tr:nth-child(2) > th {
+        background-color: orange;
+      }
+      .tierlist > tbody > tr:nth-child(3) > th {
+        background-color: yellow;
+        color: darkgray;
+      }
+      .tierlist > tbody > tr:nth-child(4) > th {
+        background-color: green;
+      }
+      .tierlist > tbody > tr:nth-child(5) > th {
+        background-color: blue;
+      }
+      .tierlist > tbody > tr:nth-child(6) > th {
+        background-color: purple;
+      }
+
+      .tierlist > tbody > tr > td,
+      .tierlist > tbody > tr > th {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <header>
+        <img src="./ex15/sleepy.jpg" alt="Logo Senac" />
+        <nav>
+          <ul>
+            <li><a href="#">Pagina inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>Tierlist de coisas</h1>
+        <p>Tierlist de todas as coisas</p>
+        <table class="tierlist">
+          <tbody>
+            <tr>
+              <th>S</th>
+              <td>Celeste</td>
+              <td>Computadores</td>
+              <td>Amigos</td>
+            </tr>
+            <tr>
+              <th>A</th>
+              <td>Azar</td>
+            </tr>
+            <tr>
+              <th>B</th>
+              <td>Bananas</td>
+            </tr>
+            <tr>
+              <th>C</th>
+              <td>Cidades</td>
+            </tr>
+            <tr>
+              <th>D</th>
+              <td>Dados</td>
+            </tr>
+            <tr>
+              <th>F</th>
+              <td>Todo o resto</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>Lista 1</li>
+          <li>Lista 2</li>
+          <li>Lista 3</li>
+        </ul>
+        <ol>
+          <li>Lista 4</li>
+          <li>Lista 5</li>
+          <li>Lista 6</li>
+        </ol>
+      </main>
+      <footer>
+        <img src="./ex15/sleepy.jpg" alt="Sleepy Cat" />
+        <ul>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Instragram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
