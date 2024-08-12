@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 15</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        background-color: beige;
+        padding: 5px;
+      }
+      img {
+        width: 50%;
+        mask: radial-gradient(black 40%
+        , transparent);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Definitivamente não é meu primeiro rodapé</h1>
+      <p>Esse é um exemplo de rodapé em uma pagina HTML</p>
+    </main>
+
+    <footer>
+      <img src="./ex15/sleepy.jpg" alt="Eeepy cat" />
+      <p>2024 Meu Website. Todos os direitos reservados</p>
+      <table>
+        <thead>
+          <tr>
+            <td>Licença</td>
+            <td>Fonte</td>
+            <td>Contato</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MIT</td>
+            <td>
+              <a href="https://github.com/henriquekirchheck/senac-frontend">
+                Github
+              </a>
+            </td>
+            <td>
+              <a
+                href="mailto:86362827+henriquekirchheck@users.noreply.github.com "
+              >
+                Email
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </footer>
+  </body>
+</html>
