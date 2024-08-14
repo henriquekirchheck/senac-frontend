@@ -50,6 +50,12 @@ export const App = () => {
         <li>
           <a href="/ex16">Desafio 16</a>
         </li>
+        <li>
+          <a href="/ex17">Desafio 17</a>
+        </li>
+        <li>
+          <a href="/ex18">Desafio 18</a>
+        </li>
       </ul>
     </>
   );
