@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 21</title>
+    <link rel="stylesheet" href="ex21.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Cadastro de Paciente</h1>
+      <form class="form">
+        <label for="nome">Digite seu nome</label>
+        <input type="text" class="form-input" name="nome" id="nome" />
+        <label for="cpf">Digite seu CPF</label>
+        <input type="text" class="form-input" name="cpf" id="cpf" />
+        <label for="address">Digite seu endereço</label>
+        <input type="text" class="form-input" name="address" id="address" />
+        <label for="phone">Digite seu telefone</label>
+        <input type="text" class="form-input" name="phone" id="phone" />
+        <label for="email">Digite seu email</label>
+        <input class="form-input" name="email" id="email" type="email" />
+        <label for="birthdate">Digite sua data de nascimento</label>
+        <input class="form-input" name="birthdate" id="birthdate" type="date" />
+        <label for="login">Digite seu login</label>
+        <input type="text" class="form-input" name="login" id="login" />
+        <label for="password">Digite seu senha</label>
+        <input
+          class="form-input"
+          name="password"
+          id="password"
+          type="password"
+        />
+        <div class="button-wrapper">
+          <button class="button bg-green" type="submit">Gravar</button>
+          <button id="clear" class="button bg-red" type="button">Limpar</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      const form = /** @type {HTMLFormElement} */ (
+        document.querySelector(".form")
+      );
+      document.getElementById("clear").addEventListener("click", () => {
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
