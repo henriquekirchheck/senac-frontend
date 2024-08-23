@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  text-decoration: none;
+}
+.header nav ul a {
+  text-decoration: none;
+}
+
+
+.main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.main > h1 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.first-time .form-input:invalid {
+  border: 1px solid red;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  gap: 10px;
+}
+
+.button {
+  flex-grow: 1;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: filter 200ms ease-out;
+}
+
+.button:hover {
+  filter: brightness(1.2) drop-shadow(2px 2px 2px black);
+}
+
+.bg-green {
+  background-color: green;
+}
+.bg-red {
+  background-color: red;
+}
+
+#message {
+  resize: none;
+}
