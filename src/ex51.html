@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" name="num1" id="num1" class="numbers" placeholder="Português"/>
+    <input type="number" name="num2" id="num2" class="numbers" placeholder="Raciocínio Lógico"/>
+    <input type="number" name="num3" id="num3" class="numbers" placeholder="Orientação a Objetos"/>
+    <input type="number" name="num4" id="num4" class="numbers" placeholder="Desenvolvimento Web"/>
+    <input type="number" name="num5" id="num5" class="numbers" placeholder="Desenvolvimento Mobile"/>
+    <button onclick="check()">Clique Aqui</button>
+    <p>O resultado: <span id="result"></span></p>
+    <script>
+      const numbers = document.getElementsByClassName("numbers");
+      const result = document.getElementById("result");
+      function check() {
+        let resultValue = 0;
+        for (const number of numbers) {
+          resultValue += parseFloat(number.value);
+        }
+        result.innerText = resultValue / numbers.length;
+      }
+    </script>
+  </body>
+</html>

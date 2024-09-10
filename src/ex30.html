@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 30</title>
+  </head>
+  <body>
+    <img id="inspirobot" alt="InspiroBot" />
+    <script>
+      const img = document.getElementById("inspirobot");
+      fetch("https://inspirobot.me/api?generate=true")
+        .then(async (data) => await data.text())
+        .then((data) => {
+          img.src = data;
+        });
+    </script>
+  </body>
+</html>

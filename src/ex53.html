@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="num1" />
+    <select name="operation" id="operation">
+      <option value="add">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">*</option>
+      <option value="division">/</option>
+    </select>
+    <input type="number" id="num2" />
+    <button type="button" onclick="calculate()">Calcular</button>
+    <p>Resultado: <span id="result"></span></p>
+    
+    <input type="text" id="code">
+    <button type="button" onclick="pwn()">Calcular</button>
+
+    <script>
+      const num1 = document.getElementById("num1");
+      const num2 = document.getElementById("num2");
+      const result = document.getElementById("result");
+      const operation = document.getElementById("operation");
+
+      function calculate() {
+        const num1value = parseFloat(num1.value);
+        const num2value = parseFloat(num2.value);
+
+        /** @type {"add" | "subtract" | "multiply" | "division"} */
+        const operationValue = operation.value;
+
+        let resultValue = 0;
+
+        switch (operationValue) {
+          case "add":
+            resultValue = num1value + num2value;
+            break;
+          case "division":
+            resultValue = num1value / num2value;
+            break;
+          case "multiply":
+            resultValue = num1value * num2value;
+            break;
+          case "subtract":
+            resultValue = num1value - num2value;
+            break;
+        }
+
+        result.innerText = resultValue;
+      }
+    </script>
+
+    <script>
+      const code = document.getElementById("code")
+      function pwn() {
+        const text = code.value
+        result.innerHTML = text
+      }
+    </script>
+  </body>
+</html>
